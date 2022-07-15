@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'task_list_widget.dart';
 
 void main() {
   runApp(const TaskApp());
@@ -10,12 +11,9 @@ class TaskApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: Scaffold(
-        body: Container(
-          color: Colors.lime,
-          height: 300,
-        ),
+        body: TaskListWidget(),
         ),
     );
   }

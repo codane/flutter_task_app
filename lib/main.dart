@@ -6,6 +6,7 @@ import 'top_custom_clipper.dart';
 void main() {
   runApp(const MaterialApp(
     home: TaskApp(),
+    debugShowCheckedModeBanner: false,
   ));
 }
 

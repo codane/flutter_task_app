@@ -7,8 +7,21 @@ class AddTaskPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: const Center(
-        child: Text("Second page"),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          const Padding(
+            padding: EdgeInsets.all(16.0),
+            child:  TextField(
+              decoration: InputDecoration(
+                hintText: "Enter a new task",
+              ),
+            ),
+          ),
+          ElevatedButton(onPressed: () {}, 
+          child: const Text("Save"),
+          ),
+        ],
       ),
     );
   }
